@@ -1,0 +1,6 @@
+name: Chesapeake Commons
+description: "Data visualization for environmental awareness."
+url: "http://chesapeakecommons.org"
+permalink: /:title/
+markdown: redcarpet
+pygments: true

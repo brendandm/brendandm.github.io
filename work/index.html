@@ -1,0 +1,24 @@
+---
+layout: default
+title: Work
+class: work
+---
+
+<div class="container">
+
+<ul class="projects">
+    {% for post in site.posts %}
+    {% if post.categories contains 'project' %}
+    <li class="col-md-6 col-md-offset-3">
+    <div class="project-image"><img src="/assets/{{ post.image }}" /></div>
+    <div class="project-detail {{ post.type }}">
+    <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+    <p class="project-meta">Client: {{ post.client }}</p>
+    <p class="project-meta">Completed: {{ post.finish }}</p>
+    </div>
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>
+
+</div>

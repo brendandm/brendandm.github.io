@@ -1,0 +1,22 @@
+---
+layout: default
+title: Blog
+class: blog
+---
+
+<div class="container">
+
+<ul class="posts">
+    {% for post in site.posts %}
+    {% if post.categories contains 'article' %}
+    <li class="col-md-6 col-md-offset-3 avatar-{{ post.avatar }}"><p><a class="read" href="{{ post.url }}">{{ post.title }}</a></p>
+    <p class="project-meta">by {{ post.author }}</p>
+    <p class="project-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+    {{ post.content | split: '<!-- ex -->' | first }}
+    </li>
+    
+    {% endif %}
+    {% endfor %}
+</ul>
+
+</div>
