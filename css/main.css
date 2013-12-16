@@ -142,14 +142,18 @@ height: 296px;
 background-repeat: no-repeat;
 }
 
+@-webkit-keyframes servAnim { 0% { background-position: 0% 0%; } 50% { background-position: 0% 50%; } 100% { background-position: 0% 100%; } }
+   @-moz-keyframes servAnim { 0% { background-position: 0% 0%; } 50% { background-position: 0% 50%; } 100% { background-position: 0% 100%; } }
+        @keyframes servAnim { 0% { background-position: 0% 0%; } 50% { background-position: 0% 50%; } 100% { background-position: 0% 100%; } }
+
 #cartography .frame {
 background-image: url(/assets/web-cartography.svg);
 background-position: center center;
 }
 
 #data-stories .frame {
-background-image: url(/assets/data-stories.svg);
-background-position: center center;
+background-image: url(/assets/story-seq.svg);
+animation: servAnim 10s ease-in-out infinite;
 }
 
 #data-collection .frame {
