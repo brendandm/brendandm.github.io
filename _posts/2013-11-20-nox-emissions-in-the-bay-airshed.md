@@ -14,7 +14,7 @@ The Chesapeake Bay Airshed Model (or Regional Atmospheric Deposition Model) prov
 
 Measuring approximately 350,000 square miles, the airshed is roughly five times larger than the Bay watershed. Airshed boundaries reflect the extent of practical control limits for NO<sub>x</sub>. Note that airborne pollutants have differing transport profiles and a more exact airshed would encompass most of the eastern United States.
 
-<iframe src="http://chesapeakec.maps.arcgis.com/home/webmap/embedViewer.html?webmap=bd788da4c9db4f728129bc82f29b7aa7&amp;extent=-91.2085,32.5221,-62.8418,46.2052&amp;zoom=true" height="600" width="1000" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+<iframe src="http://chesapeakec.maps.arcgis.com/home/webmap/embedViewer.html?webmap=bd788da4c9db4f728129bc82f29b7aa7&amp;extent=-91.2085,32.5221,-62.8418,46.2052&amp;zoom=true" height="600" width="960" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 In 2012, stationary EGUs in the United States generated nearly 1.68 million tons of NO<sub>x</sub> emissions, according to monitoring data from the EPAís Acid Rain Program. Approximately 27% (444,184 tons) were produced by 278 facilities in the Chesapeake Bay airshed. Ranking this group by 2012 emissions, the first fifty sources accounted for 83.8% of the total NO<sub>x</sub> originating in the airshed. These fifty plants are distributed across ten states, two of which (Pennsylvania and Ohio) contributed 49.3% of emissions within the region.
 
