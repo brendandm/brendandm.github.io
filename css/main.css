@@ -53,11 +53,13 @@ border-top: 1px solid rgb(224,224,224);
 }
 
 a.lego {
+position: relative;
 display: block;
+left: 50%;
+margin: 24px 0px 24px -80px;
 padding: 16px 0px;
 max-width: 160px;
 text-align: center;
-margin: 24px auto;
 border: 1px solid rgb(200,208,216);
 color: rgb(160,168,176);
 transition: all 200ms ease-in-out;
