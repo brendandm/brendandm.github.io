@@ -4,7 +4,7 @@ title: Cartographic Basemaps of the Chesapeake
 author: John Dawes
 client: Chesapeake Commons
 finish: May 2013
-image: "vector-bathy.jpg"
+image: baybathy.jpg
 type: "web-cartography"
 categories: project
 published: true
