@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  "Freedom to Float Campaign"
-author: "John Dawes"
-client: "National Parks Conservation Association"
-finish: "June 2013"
-image: "jules.jpg"
-type: data-story
+title: Freedom to Float Campaign
+author: John Dawes
+client: National Parks Conservation Association
+finish: June 2013
+image: jkayak.jpg
+type: "data-story"
 categories: project
+published: true
 ---
 
 The National Parks Conservation Association (NPCA) launched the Freedom to Float campaign dedicated to increasing the access to treasured and natural landscapes in an effort to promote both conservation awareness and appreciation for the Chesapeake's waterways. The NPCA understands the importance of preserving and utilizing water trails such as the Captain John Smith Chesapeake and Star-Spangled Banner National historic trail as recreation and tourism are critical to the Bay's regional economy and environmental sensibility.
