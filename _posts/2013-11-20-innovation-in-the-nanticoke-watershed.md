@@ -4,7 +4,7 @@ title: Conservation Innovations in the Nanticoke Watershed
 author: John Dawes
 client: Burke Environmental Associates
 finish: July 2013
-image: nanticoke.jpg
+image: nant_DEM.jpg
 type: "data-collection"
 categories: project
 published: true
