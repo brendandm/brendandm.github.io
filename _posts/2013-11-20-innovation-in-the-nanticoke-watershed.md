@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: Conservation Innovations in the Nanticoke Watershed
 author: John Dawes
 client: Burke Environmental Associates

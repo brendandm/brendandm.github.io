@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: Nitrogen Oxide Emissions in the Bay Airshed
 author: John Dawes
 client: Chesapeake Commons

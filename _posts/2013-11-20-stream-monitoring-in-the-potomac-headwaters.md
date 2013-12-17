@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title:  Stream Monitoring in the Potomac Headwaters
 author: John Dawes
 client: The Mountain Institute

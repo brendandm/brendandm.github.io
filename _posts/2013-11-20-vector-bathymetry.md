@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: Cartographic Basemaps of the Chesapeake
 author: John Dawes
 client: Chesapeake Commons

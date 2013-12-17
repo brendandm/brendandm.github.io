@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title: "An Outcome-Driven Application"
 pdate: {}
 author: John Dawes

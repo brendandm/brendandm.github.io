@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: Freedom to Float Campaign
 author: John Dawes
 client: National Parks Conservation Association

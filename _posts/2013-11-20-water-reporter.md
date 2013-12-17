@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: Water Reporter
 author: John Dawes
 client: Potomac Riverkeeper
