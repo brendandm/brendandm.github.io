@@ -19,4 +19,5 @@ Water Reporter has been a flagship project because we have the privilege as deve
 the boots on the ground collecting data, assessing pollution reports, and making sure local water quality issues are addressed, and we are proud to be part of the work.
 
 So what's next?...Version 1.1; we can't celebrate too long because we're not about to become obsolete. 501cTech's award is confirmation to keep going and we will maintain our resolve to grind now, shine later, and keep producing outcome driven applications.
+
 ![](/assets/prktech.jpg)
