@@ -10,6 +10,8 @@ published: true
 
 Last night <a href="http://www.potomacriverkeeper.org/" target="_blank">Potomac Riverkeeper</a> and Chesapeake Commons won the <a href="http://www.501ctech.org/potomac-riverkeeper-and-ywca-national-capital-area-win-2013-technology-impact-awards-2/" target="_blank">2013 Technology Impact Award</a> presented by <a href="http://www.501ctech.org/#&amp;panel1-1&amp;panel2-1" target="_blank">501cTech</a> and <a href="http://www.accenture.com/us-en/pages/index.aspx" target="_blank">Accenture</a>.
 
+!(/assets/Potomac-Riverkeeper.jpg)
+
 <!-- ex -->
 
 This award honors non profit organizations who are most effective in leveraging technology to further their mission. Out of 29 organizations, Potomac Riverkeeper and Chesapeake Commons were awarded first place for the use and development of the <a href="https://itunes.apple.com/us/app/the-water-reporter/id668005311" target="_blank">Water Reporter App for iOS</a>. Water Reporter allows anyone with a smartphone to share memorable experiences on the water and submit pollution reports to a centralized database for followup and cross sector remedial action.
