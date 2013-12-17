@@ -5,9 +5,9 @@ author: John Dawes
 client: Chesapeake Commons
 finish: August 2013
 image: hatfield.jpg
-type: "data-story"
+resource: http://apps.chesapeake-commons.org/NOX/index.html
+type: data-story
 categories: project
-published: true
 ---
 
 The Chesapeake Bay Airshed Model (or Regional Atmospheric Deposition Model) provides estimates of nitrogen oxide (NO<sub>x</sub>) emissions from sources in all or part of sixteen states from South Carolina north to Michigan and east to Vermont. The model is three-dimensional and simulates the movement of airborne NO<sub>x</sub> both vertically and horizontally across the region. Monitoring stations operated by the EPA and NOAA collect model inputs for wet deposition (via precipitation) and dry deposition through hourly emission estimates and meteorological data.
@@ -23,5 +23,3 @@ Out of 1,137 plants for which emissions data were available from every year in t
 The map displays the top fifty power plants ranked by total 2012 NO<sub>x</sub> emissions. Contextual data include owner/operator names, physical locations, plant and fuel types, and the status of controls for SO<sub>2</sub>, NO<sub>x</sub>, and CO<sub>2</sub>. Base layers are provided by Esri with support from various federal agency partners.
 
 To learn about each facility, navigate to the map and browse its contents using the right and left arrows in the ranking cell. Alternatively, click or tap on a marker pin to view plant details.
-
-<a class="lego" href="http://apps.chesapeake-commons.org/NOX/index.html" target="_blank">View project.</a>

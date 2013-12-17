@@ -5,9 +5,9 @@ author: John Dawes
 client: Potomac Riverkeeper
 finish: July 2013
 image: reporter.jpg
-type: "data-collection"
+resource: http://waterreporter.org
+type: data-collection
 categories: project
-published: true
 ---
 
 With 17 million people residing in this vast watershed promoting water quality and environmental stewardship at a local, headwater, level is crux to ensuring a healthy Chesapeake. Potomac Riverkeeper one the many organizations focused on Bay restoration through citizen engagement and advocacy, needed a quick and efficient way to crowd source data on pollution hotspots and recreation activities throughout the watershed. These citizen reports allow any involved small watershed organization to be the eyes and the ears of the river and help to remediate pollution areas based on citizen aggregated data.
@@ -20,8 +20,6 @@ After a few short cycles of design, development, and user-focused improvements, 
 
 
 + <strong>2. Stewardship:</strong> We can use information that citizens collect on areas of concern to help identify areas in need of local restoration.
-
-<a class="lego" href="http://waterreporter.org" target="_blank">View project.</a>
 
 <iframe src="http://www.viableindustries.com/viz/water-reporter/" height="320" width="992" frameborder="0"></iframe>
 
