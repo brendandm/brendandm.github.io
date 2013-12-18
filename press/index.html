@@ -7,6 +7,20 @@ class: press
 
 <section class="section pressbox">
     
-<div class="container">{% include press.html %}</div>
+<div class="container">
+<h2>Press</h2>
+
+<ul class="press">
+    {% for post in site.posts %}
+    {% if post.categories contains 'press' %}
+    <li class="col-md-6 col-md-offset-3" data-date="{{ post.date }}"><p><a class="read" href="{{ post.location }}" target="_blank">{{ post.headline }}</a></p>
+    <p class="project-meta">by {{ post.source }}</p>
+    <p class="project-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+    </li>
+    
+    {% endif %}
+    {% endfor %}
+</ul>
+</div>
     
 </section>
