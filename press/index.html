@@ -10,7 +10,7 @@ class: press
 <div class="container">
 <h2>Press</h2>
 
-<ul class="press">
+<ul class="press-list">
     {% for post in site.posts %}
     {% if post.categories contains 'press' %}
     <li class="col-md-6 col-md-offset-3" data-date="{{ post.date }}"><p><a class="read" href="{{ post.location }}" target="_blank">{{ post.headline }}</a></p>

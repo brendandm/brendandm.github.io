@@ -246,7 +246,7 @@ padding-left: 40px;
 
 /* Work and Blog Index Pages + Press Widget */
 
-.posts, .projects, .press {
+.post-list, .project-list, .press-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -263,7 +263,7 @@ left: 50%;
 margin-left: -480px;
 }
 
-.posts > li {
+.post-list > li {
 position: relative;
 display: block;
   padding: 80px 0px 40px 0px;
@@ -271,7 +271,7 @@ text-align: center;
   border-bottom: 1px solid rgb(224,224,224);
 }
 
-.projects > li {
+.project-list > li {
 position: relative;
 display: block;
 margin-bottom: 40px;
@@ -280,7 +280,7 @@ text-align: center;
   border: 1px solid rgb(224,224,224);
 }
 
-.projects > li .project-detail {
+.project-list > li .project-detail {
 position: relative;
 display: block;
   padding: 80px 0px;
@@ -288,16 +288,16 @@ text-align: center;
   border-top: 1px solid rgb(224,224,224);
 }
 
-.posts > li:first-child, .projects > li:first-child {
+.post-list > li:first-child, .project-list > li:first-child {
 padding-top: 0;
 margin-top: 120px;
 }
 
-.posts > li:last-child, .projects > li:last-child {
+.post-list > li:last-child, .project-list > li:last-child {
 margin-bottom: 160px;
 }
 
-.posts li a.read, .projects li a, .press li a {
+.post-list li a.read, .project-list li a, .press-list li a {
   font-size: 1.25em;
 font-weight: bold;
 font-family: 'Montserrat', 'Open Sans', sans-serif;
@@ -307,22 +307,22 @@ transition: all 200ms ease-in-out;
 
 /* light green:   color: rgb(24,184,88); */
 
-.posts li a:hover, .posts li a:focus, .projects li a:hover, .projects li a:focus, .press li a:hover, .press li a:focus {
+.post-list li a:hover, .post-list li a:focus, .project-list li a:hover, .project-list li a:focus, .press-list li a:hover, .press-list li a:focus {
 color: rgb(17,86,132);
 }
 
 /* dark green: rgb(17,132,63); */
 
-.posts > li p:last-of-type {
+.post-list > li p:last-of-type {
 text-align: left;
 margin-top: 24px;
 }
 
-.posts > li p:last-of-type a {
+.post-list > li p:last-of-type a {
 color: rgb(56,64,72);
 }
 
-.posts li:before {
+.post-list li:before {
   display: block;
   position: relative;
   content: "";
@@ -372,11 +372,11 @@ color: rgb(56,64,72);
   background: rgb(255,255,255) url(/assets/p-glyphs.svg) center bottom no-repeat;
 }
 
-.posts .project-meta, .projects .project-meta {
+.post-list .project-meta, .project-list .project-meta {
 font-size: 0.88em;
 }
 
-.posts span {
+.post-list span {
   color: #aaa;
   font-family: Monaco, "Courier New", monospace;
   font-size: 80%;
@@ -409,7 +409,7 @@ text-align: center;
 margin-bottom: 40px;
 }
 
-.press > li {
+.press-list > li {
 position: relative;
 display: block;
   padding: 40px;
@@ -417,7 +417,7 @@ margin-bottom: 40px;
   border: 1px solid rgb(224,224,224);
 }
 
-.press > li:last-child {
+.press-list > li:last-child {
 margin-bottom: 0;
 }
 
