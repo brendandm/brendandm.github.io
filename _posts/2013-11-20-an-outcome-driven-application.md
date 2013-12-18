@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: "An Outcome-Driven Application"
-pdate: {}
+date: 2013-11-20
 author: John Dawes
 avatar: john
 categories: article

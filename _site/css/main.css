@@ -53,11 +53,13 @@ border-top: 1px solid rgb(224,224,224);
 }
 
 a.lego {
+position: relative;
 display: block;
+left: 50%;
+margin: 24px 0px 24px -80px;
 padding: 16px 0px;
 max-width: 160px;
 text-align: center;
-margin: 24px 0px;
 border: 1px solid rgb(200,208,216);
 color: rgb(160,168,176);
 transition: all 200ms ease-in-out;
@@ -140,14 +142,17 @@ height: 296px;
 background-repeat: no-repeat;
 }
 
+@-webkit-keyframes servAnim { 0% { background-position: 50% 0%; } 50% { background-position: 50% 50%; } 100% { background-position: 50% 100%; } }
+   @-moz-keyframes servAnim { 0% { background-position: 50% 0%; } 50% { background-position: 50% 50%; } 100% { background-position: 50% 100%; } }
+        @keyframes servAnim { 0% { background-position: 50% 0%; } 50% { background-position: 50% 50%; } 100% { background-position: 50% 100%; } }
+
 #cartography .frame {
 background-image: url(/assets/web-cartography.svg);
 background-position: center center;
 }
 
 #data-stories .frame {
-background-image: url(/assets/data-stories.svg);
-background-position: center center;
+background-image: url(/assets/story-seq.svg);
 }
 
 #data-collection .frame {
@@ -381,6 +386,8 @@ font-size: 0.88em;
 padding: 80px 0px;
 }
 
+/*
+
 .pressbox:before { 
 top: 0%; 
 left: 50%; 
@@ -395,7 +402,7 @@ border-top-color: rgb(24,120,184);
 border-width: 16px; 
 margin-left: -16px; 
 z-index: 8;
-}
+} */
 
 .pressbox h2 {
 text-align: center;
