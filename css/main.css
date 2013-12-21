@@ -91,12 +91,14 @@ background-color: rgb(255,255,255);
 .banner {
 color: rgb(255,255,255);
 text-align: center;
-padding: 128px 0px;
+padding: 120px 0px 136px;
 background-color: rgb(32,36,40); 
-background-image: url(/assets/monograph.svg);
+background-image: url(/assets/data-power-dark.svg);
 background-position: 0 100%;
 background-repeat: repeat-x;
 }
+
+/*
 
 .services:before { 
 top: 0%; 
@@ -112,7 +114,7 @@ border-top-color: rgb(32,36,40);
 border-width: 16px; 
 margin-left: -16px; 
 z-index: 8;
-}
+}*/
 
 .services h2 {
 text-align: center;
@@ -142,28 +144,105 @@ height: 296px;
 background-repeat: no-repeat;
 }
 
-@-webkit-keyframes servAnim { 0% { background-position: 50% 0%; } 50% { background-position: 50% 50%; } 100% { background-position: 50% 100%; } }
-   @-moz-keyframes servAnim { 0% { background-position: 50% 0%; } 50% { background-position: 50% 50%; } 100% { background-position: 50% 100%; } }
-        @keyframes servAnim { 0% { background-position: 50% 0%; } 50% { background-position: 50% 50%; } 100% { background-position: 50% 100%; } }
-
 #cartography .frame {
-background-image: url(/assets/web-cartography.svg);
-background-position: center center;
-}
 
+}
+/*
 #data-stories .frame {
 background-image: url(/assets/story-seq.svg);
+}*/
+
+#cartography-backdrop, #story-backdrop {
+  position: relative;
+  width: 320px;
+  height: 296px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#cartography-backdrop, #story-backdrop {
+  background: url(/assets/browser-window-light.svg) center center no-repeat;
+}
+
+#mapstack {
+  position: absolute;
+  height: 160px;
+  width: 304px;
+  left: 8px;
+  bottom: 56px;
+  overflow: hidden;
+}
+
+#geojson {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: 0;
+}
+
+#streetmap {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: 8;
+}
+
+#collection-backdrop {
+  position: relative;
+  width: 320px;
+  height: 200px;
+  top: 50%;
+  margin: -100px auto 0px;
+  overflow: hidden;
+  background-color: rgb(200,208,216);
+  background-image: url(/assets/data-mask-mosaic.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#story-graph {
+  position: absolute;
+  bottom: 56px;
+  left: 104px;
+}
+
+#story-panel {
+  position: absolute;
+  bottom: 56px;
+  left: 8px;
+}
+
+#story-trend {
+  position: absolute;
+  left: 44px;
+  bottom: 84px;
+  opacity: 0;
+
+}
+
+#node-tip-up {
+  position: absolute;
+  left: 44px;
+  bottom: 140px;
+  opacity: 0;
+}
+
+#node-tip-down {
+  position: absolute;
+  left: 200px;
+  bottom: 86px;
+  opacity: 0;
 }
 
 #data-collection .frame {
-background-image: url(/assets/data-collection.svg);
-background-position: center center;
+
 }
 
 .testimonials {
 background: rgb(24,120,184);
 }
 
+/*
 .testimonials:before { 
 top: 0%; 
 left: 50%; 
@@ -178,7 +257,7 @@ border-top-color: rgb(255,255,255);
 border-width: 16px; 
 margin-left: -16px; 
 z-index: 8;
-}
+}*/
 
 .testimonials h2 {
 color: rgb(255,255,255);
@@ -384,6 +463,7 @@ font-size: 0.88em;
 
 .pressbox {
 padding: 80px 0px;
+background: url(/assets/time-line.svg) center center repeat-y;
 }
 
 /*
@@ -415,6 +495,7 @@ display: block;
   padding: 40px;
 margin-bottom: 40px;
   border: 1px solid rgb(224,224,224);
+  background: rgb(255,255,255);
 }
 
 .press-list > li:last-child {
@@ -464,4 +545,152 @@ padding: 40px 0px;
 
 .post pre.terminal code {
   background-color: #333;
+}
+
+/* Vector animations */
+
+@-webkit-keyframes webCarto {
+	
+}
+
+@keyframes webCarto {
+	
+}
+
+@-webkit-keyframes dataStoryGraph {
+	38% {left: 104px;}
+	40% {left: 400px;}
+	96% {left: 400px;}
+	98% {left: 104px;}
+	100% {left: 104px;}
+}
+
+@keyframes dataStoryGraph {
+	38% {left: 104px;}
+	40% {left: 400px;}
+	96% {left: 400px;}
+	98% {left: 104px;}
+	100% {left: 104px;}
+}
+
+@-webkit-keyframes dataStoryPanel {
+	38% {left: 8px;}
+	40% {left: -120px;}
+	98% {left: -120px;}
+	100% {left: 8px;}
+}
+
+@keyframes dataStoryPanel {
+	38% {left: 8px;}
+	40% {left: -120px;}
+	98% {left: -120px;}
+	100% {left: 8px;}
+}
+
+@-webkit-keyframes dataStoryTrend {
+	39% {opacity: 0;}
+	41% {opacity: 1;}
+	95% {opacity: 1;}
+	97% {opacity: 0;}
+}
+
+@keyframes dataStoryTrend {
+	39% {opacity: 0;}
+	41% {opacity: 1;}
+	95% {opacity: 1;}
+	97% {opacity: 0;}
+}
+
+@-webkit-keyframes dataNodeUp {
+	52% {opacity: 0; bottom: 140px;}
+	54% {opacity: 1; bottom: 144px;}
+	56% {opacity: 1; bottom: 140px;}
+	92% {opacity: 1; bottom: 140px;}
+	94% {opacity: 0; bottom: 140px;}
+}
+
+@keyframes dataNodeUp {
+	52% {opacity: 0; bottom: 140px;}
+	54% {opacity: 1; bottom: 144px;}
+	56% {opacity: 1; bottom: 140px;}
+	92% {opacity: 1; bottom: 140px;}
+	94% {opacity: 0; bottom: 140px;}
+}
+
+@-webkit-keyframes dataCollect {
+	0% {background-color: rgb(200,208,216);}
+	25% {background-color: rgb(24,184,168);}
+	75% {background-color: rgb(24,184,168);}
+	100% {background-color: rgb(200,208,216);}
+}
+
+@keyframes dataCollect {
+	0% {background-color: rgb(200,208,216);}
+	25% {background-color: rgb(24,184,168);}
+	75% {background-color: rgb(24,184,168);}
+	100% {background-color: rgb(200,208,216);}
+}
+
+@-webkit-keyframes streetMap {
+	40% {left: 0px; bottom: 0px;}
+	46% {left: 320px; bottom: 0px;}
+	48% {left: 320px; bottom: -168px;}
+	94% {left: 0px; bottom: -168px;}
+	100% {left: 0px; bottom: 0px;}
+}
+
+@keyframes streetMap {
+	40% {left: 0px; bottom: 0px;}
+	46% {left: 320px; bottom: 0px;}
+	48% {left: 320px; bottom: -168px;}
+	94% {left: 0px; bottom: -168px;}
+	100% {left: 0px; bottom: 0px;}
+}
+
+.web-carto-animation {
+	animation-name: webCarto;
+}
+
+.data-story-animation {
+	animation-name: dataStory;
+}
+
+.data-collection-animation {
+	animation-name: dataCollect;
+}
+
+.service-animation {
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+#story-graph {
+	animation-name: dataStoryGraph;
+}
+
+#story-panel {
+	animation-name: dataStoryPanel;
+}
+
+#story-trend {
+	animation-name: dataStoryTrend;
+}
+
+#node-tip-up {
+	animation-name: dataNodeUp;
+}
+
+#collection-backdrop {
+	animation-name: dataCollect;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+#streetmap {
+	animation-name: streetMap;
+	animation-duration:10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
 }
