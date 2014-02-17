@@ -1,157 +1,188 @@
 <!DOCTYPE html>
-<html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <title>Chesapeake Commons | Powered by your environmental data.</title>
-        <meta name="description" content="Data visualization for environmental awareness.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<head>
+<meta charset="utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+<link href='css/diagrams.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
 
-        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+<div class="left">
+    <div class="text-widget">
+        <h1 class="geo-heading"></h1>
 
- <link rel="stylesheet" href="/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/main.css">
-        <script src="/js/vendor/modernizr-2.7.0.min.js"></script>
-    </head>
-    <body class="home">
+        <div class="geo-data">
+            <div class="geo-type tag">
+                ..
+            </div>
 
-<nav class="navbar navbar-default" role="navigation">
-    
-           <div class="container">
-    
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/"><img src="/assets/logo-mark-64.svg" /></a>
+            <div class="geo-name">
+                ..
+            </div>
+        </div>
+
+        <div class="geo-data">
+            <div class="tag">
+                Total Funding
+            </div>
+
+            <div class="geo-funding">
+                $77,562,901
+            </div>
+
+            <div class="funding-percent percent"></div>
+        </div>
+
+        <div class="geo-data">
+            <div class="tag">
+                Number of Projects
+            </div>
+
+            <div class="geo-projects">
+                737
+            </div>
+
+            <div class="project-percent percent"></div>
+        </div>
+
+        <div class="geo-data">
+            <div class="tag">
+                Award Distribution by year
+            </div>
+
+            <div class="grant-chart">
+                <div class="bar b2000">
+                    <div class="level"></div>
+                </div>
+
+                <div class="bar b2001">
+                    <div class="level"></div>
+                </div>
+
+                <div class="bar b2002">
+                    <div class="level"></div>
+                </div>
+
+                <div class="bar b2003">
+                    <div class="level"></div>
+                </div>
+
+                <div class="bar b2004">
+                    <div class="level"></div>
+                </div>
+
+                <div class="bar b2005">
+                    <div class="level"></div>
+                </div>
+
+                <div class="bar b2006">
+                    <div class="level"></div>
+                </div>
+
+                <div class="bar b2007">
+                    <div class="level"></div>
+                </div>
+
+                <div class="bar b2008">
+                    <div class="level"></div>
+                </div>
+
+                <div class="bar b2009">
+                    <div class="level"></div>
+                </div>
+
+                <div class="bar b2010">
+                    <div class="level"></div>
+                </div>
+
+                <div class="bar b2011">
+                    <div class="level"></div>
+                </div>
+
+                <div class="bar b2012">
+                    <div class="level"></div>
+                </div>
+
+                <div class="bar b2013">
+                    <div class="level"></div>
+                </div>
+            </div>
+
+            <div class="chart-labels clearfix">
+                <span class="label-left">2000</span><span class=
+                "label-right">2013</span>
+            </div>
+        </div>
+
+        <div class="geo-data programs">
+            <div class="tag">
+                Award distribution by Program
+            </div>
+
+            <div class="program-bars">
+                <div class="program-bar">
+                    <div class="program-label">
+                        SWG
+                    </div>
+
+                    <div class="program-level" id="swg"></div>
+                </div>
+
+                <div class="program-bar">
+                    <div class="program-label">
+                        INSR
+                    </div>
+
+                    <div class="program-level" id="insr"></div>
+                </div>
+
+                <div class="program-bar">
+                    <div class="program-label">
+                        TWG
+                    </div>
+
+                    <div class="program-level" id="twg"></div>
+                </div>
+
+                <div class="program-bar">
+                    <div class="program-label">
+                        CBCIG
+                    </div>
+
+                    <div class="program-level" id="cbcig"></div>
+                </div>
+            </div>
+        </div>
     </div>
-    
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="/work/">Work</a></li>
-            <li><a href="/team/">Team</a></li>
-            <li><a href="/blog/">Blog</a></li>
-            <li><a href="/press/">Press</a></li>
-        </ul>
+</div>
+
+<div class="right">
+    <div class="map-container"></div>
+
+    <div class="geo-toggle">
+        <div class="huc">
+            Watersheds
+        </div>
+
+        <div class="county">
+            Counties
+        </div>
     </div>
-    
-    </div>
-    
-</nav>
-
-          <section class="banner">
-    
-    <h1>Creative web cartography and data visualization.</h1>
-    
-</section>
-
-<section class="services contrast section">
-    
-    <div class="container">
-        
-        <h2>What do we offer?</h2>
-        
-        <p>Chesapeake Commons provides affordable web mapping and programming support to small watershed organizations, foundations, and government agencies. We build data-driven applications that spark information transparency, public engagement, and conservation policy decisions.</p>
-    
-    <div class="service-type clearfix" id="cartography">
-        <div class="text col-md-6">
-
-<h2>Web cartography</h2>
-
-<p>The Commons team employs current techniques to build fast, functional maps for use in your websites and digital publications. We also accept limited requests for geospatial data processing and help with analyses involving ArcGIS.</p></div>
-        
-          <div class="frame col-md-6"></div>
 
 </div>
-    
-  
 
-<div class="service-type clearfix" id="data-stories">
-    
-      <div class="frame col-md-6"></div>
+<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.js'></script>
 
-<div class="text col-md-6">
-<h2>Data stories</h2>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 
-<p>Your datasets hold compelling insights, but they may be stored away in spreadsheets and other formats that hinder clear communication. We can help you explain key findings in ways that are more accessible to your audience.</p></div>
+<script type="text/javascript" src="js/cbsf.js"></script>
+<script type="text/javascript" src="js/county-attrs.js"></script>
+<script type="text/javascript" src="js/countyTopo.js"></script>
 
-
-</div>
-
-<div class="service-type clearfix" id="data-collection">
-
-<div class="text col-md-6">
-<h2>Custom data collection</h2>
-
-<p>Simplify day-to-day work routines and increase user engagement with applications that gather data from mobile and desktop devices. Deliver real-time information straight to your online maps and forward-facing sites.</p></div>
-
-  <div class="frame col-md-6"></div>
-
-</div>
-
-</div>
-</section>
-
-<section class="section testimonials">
-    
-    <div class="container">
-
-<h2>What are people saying?</h2>
-    
-    <div class="quotes">
-        
-        <div class="customer-quote">"Chesapeake Commons' innovative work turned our Water Reporter app from concept to reality. Citizens use our app to report pollution and we use the data to fix the problem." - Brent Walls, Potomac Riverkeeper</div>
-        
-        <div class="endorser"><img src="/assets/brent190.jpg" height="190" width="190" /></div>
-        
-        <div class="customer-quote">"Chesapeake Commons staff respond promptly to map and data enhancement needs." - Kevin Stitzinger, The Mountain Institute</div>
-        
-        <div class="endorser"><img src="/assets/kevin190.jpg" height="190" width="190" /></div>
-        
-        <div class="customer-quote">"Your work inspires NPCA to use data to tell compelling stories that support our air and water campaigns." - Ed Stierli, National Parks Conservation Association</div>
-        
-        <div class="endorser"><img src="/assets/ed190.jpeg" height="190" width="190" /></div>
-        
-        <div class="customer-quote">"The Commons team brings strong programming and GIS skillsets to aid in my firm's environmental mapping projects." - David Burke, Burke Environmental Associates</div>
-        
-        <div class="endorser"><img src="/assets/david190.jpg" height="190" width="190" /></div>
-
-</div>
-    </div>
-</section>
-
-
-
-<section class="section footer clearfix">
-    
-    <div class="container">
-    
-    <a class="twitter" target="_blank" href="https://twitter.com/ChesCommons"><img width="72" height="72" src="/assets/twitter.svg" alt="Chesapeake Commons on Twitter" /></a>
-    
-    <p>Chesapeake Commons | Washington, D.C. | <a href="mailto:rdawes1@gmail.com">Contact</a></p>
-    
-    </div>
-    
-</section>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="/js/bootstrap.min.js"></script>
-        <script src="/js/main.js"></script>
-<script>
-    
-    window.setInterval(track, 500);
-    
-    function track() {
-    var pos = $(window).scrollTop();
-    
-    console.log(pos);
-    
-    }
-    
-    </script>
-    </body>
+<script type="text/javascript" src="js/huc8.json"></script>
+<script type="text/javascript" src="js/counties.json"></script>
+<script type="text/javascript" src="js/topo.js"></script>
+</body>
 </html>

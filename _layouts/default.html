@@ -1,5 +1,188 @@
-{% include head.html %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+<link href='css/diagrams.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
 
-          {{ content }}
+<div class="left">
+    <div class="text-widget">
+        <h1 class="geo-heading"></h1>
 
-{% include footer.html %}
+        <div class="geo-data">
+            <div class="geo-type tag">
+                ..
+            </div>
+
+            <div class="geo-name">
+                ..
+            </div>
+        </div>
+
+        <div class="geo-data">
+            <div class="tag">
+                Total Funding
+            </div>
+
+            <div class="geo-funding">
+                $77,562,901
+            </div>
+
+            <div class="funding-percent percent"></div>
+        </div>
+
+        <div class="geo-data">
+            <div class="tag">
+                Number of Projects
+            </div>
+
+            <div class="geo-projects">
+                737
+            </div>
+
+            <div class="project-percent percent"></div>
+        </div>
+
+        <div class="geo-data">
+            <div class="tag">
+                Award Distribution by year
+            </div>
+
+            <div class="grant-chart">
+                <div class="bar b2000">
+                    <div class="level"></div>
+                </div>
+
+                <div class="bar b2001">
+                    <div class="level"></div>
+                </div>
+
+                <div class="bar b2002">
+                    <div class="level"></div>
+                </div>
+
+                <div class="bar b2003">
+                    <div class="level"></div>
+                </div>
+
+                <div class="bar b2004">
+                    <div class="level"></div>
+                </div>
+
+                <div class="bar b2005">
+                    <div class="level"></div>
+                </div>
+
+                <div class="bar b2006">
+                    <div class="level"></div>
+                </div>
+
+                <div class="bar b2007">
+                    <div class="level"></div>
+                </div>
+
+                <div class="bar b2008">
+                    <div class="level"></div>
+                </div>
+
+                <div class="bar b2009">
+                    <div class="level"></div>
+                </div>
+
+                <div class="bar b2010">
+                    <div class="level"></div>
+                </div>
+
+                <div class="bar b2011">
+                    <div class="level"></div>
+                </div>
+
+                <div class="bar b2012">
+                    <div class="level"></div>
+                </div>
+
+                <div class="bar b2013">
+                    <div class="level"></div>
+                </div>
+            </div>
+
+            <div class="chart-labels clearfix">
+                <span class="label-left">2000</span><span class=
+                "label-right">2013</span>
+            </div>
+        </div>
+
+        <div class="geo-data programs">
+            <div class="tag">
+                Award distribution by Program
+            </div>
+
+            <div class="program-bars">
+                <div class="program-bar">
+                    <div class="program-label">
+                        SWG
+                    </div>
+
+                    <div class="program-level" id="swg"></div>
+                </div>
+
+                <div class="program-bar">
+                    <div class="program-label">
+                        INSR
+                    </div>
+
+                    <div class="program-level" id="insr"></div>
+                </div>
+
+                <div class="program-bar">
+                    <div class="program-label">
+                        TWG
+                    </div>
+
+                    <div class="program-level" id="twg"></div>
+                </div>
+
+                <div class="program-bar">
+                    <div class="program-label">
+                        CBCIG
+                    </div>
+
+                    <div class="program-level" id="cbcig"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="right">
+    <div class="map-container"></div>
+
+    <div class="geo-toggle">
+        <div class="huc">
+            Watersheds
+        </div>
+
+        <div class="county">
+            Counties
+        </div>
+    </div>
+
+</div>
+
+<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.js'></script>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+
+<script type="text/javascript" src="js/cbsf.js"></script>
+<script type="text/javascript" src="js/county-attrs.js"></script>
+<script type="text/javascript" src="js/countyTopo.js"></script>
+
+<script type="text/javascript" src="js/huc8.json"></script>
+<script type="text/javascript" src="js/counties.json"></script>
+<script type="text/javascript" src="js/topo.js"></script>
+</body>
+</html>

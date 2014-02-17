@@ -1,6 +1,3 @@
-name: Chesapeake Commons
-description: "Data visualization for environmental awareness."
-url: "http://chesapeakecommons.org"
-permalink: /:title/
+name: Your New Jekyll Site
 markdown: redcarpet
 pygments: true
