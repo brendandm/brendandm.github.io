@@ -309,3 +309,19 @@ g.watersheds .active, g.counties .active {
 .geo-toggle > div:hover {
 	color: rgb(120,128,136);
 }
+
+#swg {
+	width: 122px;
+}
+
+#insr {
+	width: 133px;
+}
+
+#twg {
+	width: 52px;
+}
+
+#cbcig {
+	width: 21px;
+}
