@@ -1,4 +1,5 @@
 * {
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -179,7 +180,7 @@ g.watersheds .active, g.counties .active {
 	position: relative;
 	float: left;
 	height: 120px;
-	width: 28px;
+	width: 26px;
 	margin-top: 16px;
 	margin-right: 8px;
 	margin-bottom: 8px;
@@ -228,10 +229,11 @@ g.watersheds .active, g.counties .active {
 .program-bar .program-label {
 	position: relative;
 	float: left;
-	line-height: 32px;
+	height: 32px;
 	top: 50%;
 	margin-top: -16px;
 	padding: 0px 8px;
+	font: normal 16px/32px 'Varela Round', sans-serif;
 	background: rgb(24,32,40);
 	border-radius: 4px;
 	box-shadow: 0px 1px 2px 0px rgb(64,72,80); 
@@ -292,18 +294,18 @@ g.watersheds .active, g.counties .active {
 	right: 24px;
 	font: normal 16px/32px 'Varela Round', sans-serif;
 	border-radius: 4px;
-	border: 2px solid rgb(16,216,188);
+	border: 2px solid rgb(64,72,80);
 }
 
 .geo-toggle > div {
 	float: left;
 	height: 32px;
 	padding: 0px 24px;
-	color: rgb(16,216,188);
+	color: rgb(80,88,96);
 	cursor: pointer;
-	transition: all 200ms ease-in-out;
+	transition: all 400ms ease-in-out;
 }
 
 .geo-toggle > div:hover {
-	color: rgb(135,235,222);
+	color: rgb(120,128,136);
 }

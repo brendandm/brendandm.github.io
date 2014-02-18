@@ -240,7 +240,7 @@
 
     }
 
-    d3.select(".county").on("click", countyLayer);
+    d3.select(".county-toggle").on("click", countyLayer);
 
     function countyLayer() {
 
@@ -255,7 +255,7 @@
         d3.json("js/counties.json", function (error, counties) {
 
             g.append("g")
-                .attr("class", "counties")
+                .attr("class", "counties county")
                 .selectAll("path")
                 .data(topojson.feature(counties, counties.objects.counties).features)
                 .enter().append("path")
@@ -270,13 +270,13 @@
                     return a !== b;
                 }))
                 .attr("d", path)
-                .attr("class", "boundary");
+                .attr("class", "boundary county");
 
         });
 
     }
 
-    d3.select(".huc").on("click", hucLayer);
+    d3.select(".huc-toggle").on("click", hucLayer);
 
     function hucLayer() {
 
@@ -288,7 +288,7 @@
             "visibility": "visible"
         });
 
-        d3.select(".counties").remove();
+        d3.selectAll(".county").remove();
 
     }
 
