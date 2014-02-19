@@ -112,7 +112,9 @@
 
         d3.select(".funding-percent").text(propFund.toFixed(2) + "%");
 
-        var propProj = (data.properties.projects / hucStarter.projects) * 100;
+        var yearSet = d3.values(data.properties.projects);
+
+        var propProj = (d3.sum(yearSet) / hucStarter.projects) * 100;
 
         d3.select(".project-percent").text(propProj.toFixed(2) + "%");
 
@@ -152,13 +154,15 @@
 
         d3.select(".geo-funding").text("$" + money);
 
-        var yearSplits = data.properties.annual;
+        var yearSplits = data.properties.projects;
+
+        var limit = d3.max(yearSet);
 
         for (var yKey in yearSplits) {
 
             if (yearSplits.hasOwnProperty(yKey)) {
 
-                percent = yearSplits[yKey] / data.properties.funding;
+                percent = yearSplits[yKey] / limit;
 
                 var colHeight = Math.round(percent * 120) + "px";
 
@@ -236,7 +240,7 @@
 
         }
 
-        d3.select(".geo-projects").text(data.properties.projects);
+        d3.select(".geo-projects").text(d3.sum(yearSet));
 
     }
 
