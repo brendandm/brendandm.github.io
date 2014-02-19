@@ -108,13 +108,17 @@
             "display": "block"
         });
 
-        var propFund = (data.properties.funding / 77562901) * 100;
+        var propFund, propProj, yearSet, yearMax;
+
+        propFund = (data.properties.funding / 77562901) * 100;
+
+        yearSet = d3.values(data.properties.projects);
+
+        yearMax = d3.max(yearSet);
+
+        propProj = (d3.sum(yearSet) / hucStarter.projects) * 100;
 
         d3.select(".funding-percent").text(propFund.toFixed(2) + "%");
-
-        var yearSet = d3.values(data.properties.projects);
-
-        var propProj = (d3.sum(yearSet) / hucStarter.projects) * 100;
 
         d3.select(".project-percent").text(propProj.toFixed(2) + "%");
 
@@ -156,13 +160,11 @@
 
         var yearSplits = data.properties.projects;
 
-        var limit = d3.max(yearSet);
-
         for (var yKey in yearSplits) {
 
             if (yearSplits.hasOwnProperty(yKey)) {
 
-                percent = yearSplits[yKey] / limit;
+                percent = yearSplits[yKey] / yearMax;
 
                 var colHeight = Math.round(percent * 120) + "px";
 
