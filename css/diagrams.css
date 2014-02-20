@@ -336,7 +336,7 @@ g.watersheds .active, g.counties .active {
 	position: relative;
 	height: 0px;
 	padding: 0px 0px 0px 24px;
-	margin: 8px 0px;
+	margin: 12px 0px 8px;
 	font: normal 16px/32px 'Varela Round', sans-serif;
 	color: rgb(248,168,0);
 	background: rgb(24,32,40);
