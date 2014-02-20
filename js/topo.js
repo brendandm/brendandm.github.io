@@ -144,7 +144,9 @@
             "display": "block"
         });
 
-        var propFund, propProj, yearSet, yearMax;
+        var propFund, propProj, yearSet, yearMax, totalProj;
+
+        totalProj = d3.values(starter.projects);
 
         propFund = (data.properties.funding / 77562901) * 100;
 
@@ -152,7 +154,7 @@
 
         yearMax = d3.max(yearSet);
 
-        propProj = (d3.sum(yearSet) / starter.projects) * 100;
+        propProj = (d3.sum(yearSet) / d3.sum(totalProj)) * 100;
 
         d3.select(".funding-percent").text(propFund.toFixed(2) + "%");
 
