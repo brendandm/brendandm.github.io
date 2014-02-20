@@ -324,26 +324,44 @@
     }
 
     d3.selectAll(".bar .level")
-        .datum(function() { return this.dataset; })
+        .datum(function () {
+            return this.dataset;
+        })
         .on("mouseover", function (d) {
+
+            var projectCount = d.projectCount;
+
+            var fundingLevel = d.funding;
+
+            if (fundingLevel.length === 4) {
+
+                fundingLevel = fundingLevel.substring(0, 1) + "," + fundingLevel.substring(1, 4);
+
+            } else if (fundingLevel.length === 5) {
+
+                fundingLevel = fundingLevel.substring(0, 2) + "," + fundingLevel.substring(2, 5);
+
+            } else if (fundingLevel.length === 6) {
+
+                fundingLevel = fundingLevel.substring(0, 3) + "," + fundingLevel.substring(3, 6);
+
+            } else if (fundingLevel.length === 7) {
+
+                fundingLevel = fundingLevel.substring(0, 1) + "," + fundingLevel.substring(1, 4) + "," + fundingLevel.substring(4, 7);
+
+            }
+
+            d3.select(".grant-chart").style({
+                "margin-top": "16px"
+            });
+
+            d3.select(".stat-line").style({
+                "display": "block"
+            }).text(projectCount + "projects totaling " + "$" + fundingLevel);
 
             console.log(d);
 
         });
-
-                //var that = d3.event.target;
-
-            //var projectCount = that.attr("data-project-count");
-
-            //var fundingLevel = that.attr("data-funding");
-
-            //d3.select(".grant-chart").style({ "margin-top": "16px" });
-
-            //d3.select(".stat-line").style({ "display": "block" }).text(projectCount + "projects totaling " + fundingLevel);
-
-        //});
-
-    console.log(stats);
 
     d3.select(".county-toggle").on("click", countyLayer);
 

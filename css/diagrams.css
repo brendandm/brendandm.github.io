@@ -202,6 +202,7 @@ g.watersheds .active, g.counties .active {
 	width: 100%;
 	background: rgb(80,96,112);
 	transition: all 400ms ease-in-out;
+	cursor: pointer;
 }
 
 .bar:last-of-type {
