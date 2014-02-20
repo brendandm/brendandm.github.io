@@ -5,6 +5,7 @@
         "countyH": "Funding by County",
         "hucGeo": "huc8",
         "countyGeo": "county",
+        "namefill": "All watersheds",
         "projects": {
             "2009": 57,
             "2005": 80,
@@ -30,6 +31,8 @@
 
     d3.select(".geo-heading").text(starter.hucH);
 
+    d3.select(".geo-name").text(starter.namefill);
+
     d3.select(".geo-funding").text(function () {
 
         var starterFunds = d3.values(starter.annual);
@@ -38,7 +41,7 @@
 
         var totalString = total.toString();
 
-        var text = totalString.substring(0, 2) + "," + totalString.substring(3, 6) + "," + totalString.substring(6, 8);
+        var text = "$" + totalString.substring(0, 2) + "," + totalString.substring(3, 6) + "," + totalString.substring(6, 9);
 
         return text;
 
