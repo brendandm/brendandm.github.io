@@ -58,6 +58,26 @@
 
     d3.select(".geo-type").text(starter.hucGeo);
 
+    var allYears = starter.projects;
+
+    for (var allKey in allYears) {
+
+        if (allYears.hasOwnProperty(allKey)) {
+
+            var allPercent = allYears[allKey] / 81;
+
+            var allHeight = Math.round(allPercent * 120) + "px";
+
+            var allBar = ".b" + allKey + " .level";
+
+            d3.select(allBar).style({
+                'height': allHeight
+            }).attr("data-project-count", allYears[allKey]);
+
+        }
+
+    }
+
     var width = 640,
         height = 880,
         centered;
