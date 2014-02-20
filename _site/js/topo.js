@@ -353,13 +353,13 @@
 
             }
 
-            d3.selectAll(".bar").style({
-                "margin-top": "0px"
-            });
-
             d3.select(".stat-line").style({
                 "height": "32px"
             }).text(currentYear + ": " + projectCount + " project(s) totaling " + "$" + fundingLevel);
+
+            d3.selectAll(".bar").style({
+                "margin-top": "8px"
+            });
 
             console.log(d);
 
