@@ -353,9 +353,9 @@
 
             }
 
-            //d3.select(".grant-chart").style({
-                //"margin-top": "16px"
-            //});
+            d3.selectAll(".bar").style({
+                "margin-top": "0px"
+            });
 
             d3.select(".stat-line").style({
                 "height": "32px"
