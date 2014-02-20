@@ -41,7 +41,7 @@
 
         var totalString = total.toString();
 
-        var text = "$" + totalString.substring(0, 2) + "," + totalString.substring(3, 6) + "," + totalString.substring(6, 9);
+        var text = "$" + totalString.substring(0, 2) + "," + totalString.substring(2, 5) + "," + totalString.substring(5, 8);
 
         return text;
 
