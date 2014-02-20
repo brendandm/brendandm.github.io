@@ -255,9 +255,11 @@
 
         d3.selectAll(".bar .level").on("mouseover", function () {
 
-            var projectCount = this.attr("data-project-count");
+            var that = d3.event.target;
 
-            var fundingLevel = this.attr("data-funding");
+            var projectCount = that.attr("data-project-count");
+
+            var fundingLevel = that.attr("data-funding");
 
             d3.select(".grant-chart").style({ "margin-top": "16px" });
 
