@@ -219,6 +219,20 @@
 
         d3.select(".geo-funding").text("$" + money);
 
+        var fundSet = data.properties.annual;
+
+        for (var f in fundSet) {
+
+            if (fundSet.hasOwnProperty(f)) {
+
+                var fBar = ".b" + f + " .level";
+
+                d3.select(fBar).attr("data-funding", fundSet[f]);
+
+            }
+
+        }
+
         var yearSplits = data.properties.projects;
 
         for (var yKey in yearSplits) {
@@ -238,6 +252,18 @@
             }
 
         }
+
+        d3.selectAll(".bar .level").on("mouseover", function () {
+
+            var projectCount = this.attr("data-project-count");
+
+            var fundingLevel = this.attr("data-funding");
+
+            d3.select(".grant-chart").style({ "margin-top": "16px" });
+
+            d3.select(".stat-line").style({ "display": "block" }).text(projectCount + "projects totaling " + fundingLevel);
+
+        });
 
         var progSplits = data.properties.programs;
 
