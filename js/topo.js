@@ -206,7 +206,7 @@
 
                 d3.select(yBar).style({
                     'height': colHeight
-                });
+                }).attr("data-project-count", yearSplits[yKey]);
 
             }
 
