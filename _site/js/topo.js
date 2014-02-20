@@ -253,19 +253,21 @@
 
         }
 
-        d3.selectAll(".bar .level").on("mouseover", function () {
+        var stats = d3.selectAll(".bar .level").datum(function() { return this.dataset; });
 
-            var that = d3.event.target;
+        console.log(stats);
 
-            var projectCount = that.attr("data-project-count");
+            //var that = d3.event.target;
 
-            var fundingLevel = that.attr("data-funding");
+            //var projectCount = that.attr("data-project-count");
 
-            d3.select(".grant-chart").style({ "margin-top": "16px" });
+            //var fundingLevel = that.attr("data-funding");
 
-            d3.select(".stat-line").style({ "display": "block" }).text(projectCount + "projects totaling " + fundingLevel);
+            //d3.select(".grant-chart").style({ "margin-top": "16px" });
 
-        });
+            //d3.select(".stat-line").style({ "display": "block" }).text(projectCount + "projects totaling " + fundingLevel);
+
+        //});
 
         var progSplits = data.properties.programs;
 
