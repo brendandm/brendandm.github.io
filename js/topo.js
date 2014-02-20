@@ -351,12 +351,12 @@
 
             }
 
-            d3.select(".grant-chart").style({
-                "margin-top": "16px"
-            });
+            //d3.select(".grant-chart").style({
+                //"margin-top": "16px"
+            //});
 
             d3.select(".stat-line").style({
-                "display": "block"
+                "height": "32px"
             }).text(projectCount + " project(s) totaling " + "$" + fundingLevel);
 
             console.log(d);

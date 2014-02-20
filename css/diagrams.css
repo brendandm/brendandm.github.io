@@ -176,10 +176,10 @@ g.watersheds .active, g.counties .active {
 	box-shadow: 0px 1px 2px 0px rgb(64,72,80);
 }
 
-.grant-chart {
+/*.grant-chart {
 	margin-top: 0px;
 	transition: all 200ms ease-in-out;
-}
+}*/
 
 .bar {
 	position: relative;
@@ -333,9 +333,8 @@ g.watersheds .active, g.counties .active {
 }
 
 .stat-line {
-	display: none;
 	position: relative;
-	height: 32px;
+	height: 0px;
 	padding: 0px 0px 0px 24px;
 	margin: 8px 0px;
 	font: normal 16px/32px 'Varela Round', sans-serif;
@@ -343,4 +342,5 @@ g.watersheds .active, g.counties .active {
 	background: rgb(24,32,40);
 	border-radius: 4px;
 	box-shadow: 0px 1px 2px 0px rgb(64,72,80);
+	transition: all 200ms ease-in-out;
 }
