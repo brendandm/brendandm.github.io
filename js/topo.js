@@ -229,7 +229,7 @@
 
                 var fBar = ".b" + f + " .level";
 
-                d3.select(fBar).attr("data-funding", fundSet[f]);
+                d3.select(fBar).attr("data-funding", fundSet[f]).attr("data-year", f);
 
             }
 
@@ -333,6 +333,8 @@
 
             var fundingLevel = d.funding;
 
+            var currentYear = d.year;
+
             if (fundingLevel.length === 4) {
 
                 fundingLevel = fundingLevel.substring(0, 1) + "," + fundingLevel.substring(1, 4);
@@ -357,7 +359,7 @@
 
             d3.select(".stat-line").style({
                 "height": "32px"
-            }).text(projectCount + " project(s) totaling " + "$" + fundingLevel);
+            }).text(currentYear + ": " + projectCount + " project(s) totaling " + "$" + fundingLevel);
 
             console.log(d);
 
