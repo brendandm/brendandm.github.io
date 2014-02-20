@@ -255,18 +255,6 @@
 
         }
 
-            //var that = d3.event.target;
-
-            //var projectCount = that.attr("data-project-count");
-
-            //var fundingLevel = that.attr("data-funding");
-
-            //d3.select(".grant-chart").style({ "margin-top": "16px" });
-
-            //d3.select(".stat-line").style({ "display": "block" }).text(projectCount + "projects totaling " + fundingLevel);
-
-        //});
-
         var progSplits = data.properties.programs;
 
         for (var pKey in progSplits) {
@@ -335,7 +323,25 @@
 
     }
 
-    var stats = d3.selectAll(".bar .level").datum(function() { return this.dataset; });
+    d3.selectAll(".bar .level")
+        .datum(function() { return this.dataset; })
+        .on("mouseover", function (d) {
+
+            console.log(d);
+
+        });
+
+                //var that = d3.event.target;
+
+            //var projectCount = that.attr("data-project-count");
+
+            //var fundingLevel = that.attr("data-funding");
+
+            //d3.select(".grant-chart").style({ "margin-top": "16px" });
+
+            //d3.select(".stat-line").style({ "display": "block" }).text(projectCount + "projects totaling " + fundingLevel);
+
+        //});
 
     console.log(stats);
 
