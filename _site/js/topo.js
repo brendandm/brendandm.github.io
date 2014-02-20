@@ -1,26 +1,60 @@
 (function () {
 
-    var hucStarter = {
-        "heading": "Funding by Watershed",
-        "geography": "huc8",
-        "projects": "737",
-        "total": "$77,562,901"
+    var starter = {
+        "hucH": "Funding by Watershed",
+        "countyH": "Funding by County",
+        "hucGeo": "huc8",
+        "countyGeo": "county",
+        "projects": {
+            "2009": 57,
+            "2005": 80,
+            "2003": 72,
+            "2006": 74,
+            "2004": 81,
+            "2008": 43,
+            "2002": 59,
+            "2007": 29,
+            "2000": 55,
+            "2001": 55,
+            "2010": 41,
+            "2011": 53,
+            "2012": 38
+        },
+        "annual": {
+            "insr": 32318527,
+            "swg": 29497486,
+            "twg": 12519681,
+            "cbcig": 5016769
+        }
     };
 
-    var countyStarter = {
-        "heading": "Funding by County",
-        "geography": "county",
-        "projects": "737",
-        "total": "$77,562,901"
-    };
+    d3.select(".geo-heading").text(starter.hucH);
 
-    d3.select(".geo-heading").text(hucStarter.heading);
+    d3.select(".geo-funding").text(function () {
 
-    d3.select(".geo-funding").text(hucStarter.total);
+        var starterFunds = d3.values(starter.annual);
 
-    d3.select(".geo-projects").text(hucStarter.projects);
+        var total = d3.sum(starterFunds);
 
-    d3.select(".geo-type").text(hucStarter.geography);
+        var text = total.substring(0, 2) + "," + total.substring(3, 6) + "," + total.substring(6, 8);
+
+        return text;
+
+    });
+
+    d3.select(".geo-projects").text(function () {
+
+        var starterGrants = d3.values(starter.projects);
+
+        var total = d3.sum(starterGrants);
+
+        var text = total.substring(0, 2) + "," + total.substring(3, 6) + "," + total.substring(6, 8);
+
+        return text;
+
+    });
+
+    d3.select(".geo-type").text(starter.hucGeo);
 
     var width = 640,
         height = 880,
@@ -116,7 +150,7 @@
 
         yearMax = d3.max(yearSet);
 
-        propProj = (d3.sum(yearSet) / hucStarter.projects) * 100;
+        propProj = (d3.sum(yearSet) / starter.projects) * 100;
 
         d3.select(".funding-percent").text(propFund.toFixed(2) + "%");
 
@@ -172,7 +206,7 @@
 
                 d3.select(yBar).style({
                     'height': colHeight
-                });
+                }).attr("data-project-count", yearSplits[yKey]);
 
             }
 
@@ -190,7 +224,7 @@
 
                 var progWidth = Math.round(percent * 320) + "px";
 
-                var pBar = "#" + pKey.toLowerCase();
+                var pBar = "#" + pKey;
 
                 var w = d3.select(pBar);
 
@@ -250,9 +284,9 @@
 
     function countyLayer() {
 
-        d3.select(".geo-heading").text(countyStarter.heading);
+        d3.select(".geo-heading").text(starter.countyH);
 
-        d3.select(".geo-type").text(countyStarter.geography);
+        d3.select(".geo-type").text(starter.countyGeo);
 
         d3.select(".watersheds").style({
             "visibility": "hidden"
@@ -286,9 +320,9 @@
 
     function hucLayer() {
 
-        d3.select(".geo-heading").text(hucStarter.heading);
+        d3.select(".geo-heading").text(starter.hucH);
 
-        d3.select(".geo-type").text(hucStarter.geography);
+        d3.select(".geo-type").text(starter.hucGeo);
 
         d3.select(".watersheds").style({
             "visibility": "visible"
@@ -298,4 +332,4 @@
 
     }
 
-})();
+}());
