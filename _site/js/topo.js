@@ -221,6 +221,8 @@
 
         var fundSet = data.properties.annual;
 
+        console.log(fundSet);
+
         for (var f in fundSet) {
 
             if (fundSet.hasOwnProperty(f)) {
@@ -252,10 +254,6 @@
             }
 
         }
-
-        var stats = d3.selectAll(".bar .level").datum(function() { return this.dataset; });
-
-        console.log(stats);
 
             //var that = d3.event.target;
 
@@ -336,6 +334,10 @@
         d3.select(".geo-projects").text(d3.sum(yearSet));
 
     }
+
+    var stats = d3.selectAll(".bar .level").datum(function() { return this.dataset; });
+
+    console.log(stats);
 
     d3.select(".county-toggle").on("click", countyLayer);
 
