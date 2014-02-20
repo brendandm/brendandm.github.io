@@ -357,7 +357,7 @@
 
             d3.select(".stat-line").style({
                 "display": "block"
-            }).text(projectCount + "projects totaling " + "$" + fundingLevel);
+            }).text(projectCount + " project(s) totaling " + "$" + fundingLevel);
 
             console.log(d);
 
