@@ -36,7 +36,9 @@
 
         var total = d3.sum(starterFunds);
 
-        var text = total.substring(0, 2) + "," + total.substring(3, 6) + "," + total.substring(6, 8);
+        var totalString = total.toString();
+
+        var text = totalString.substring(0, 2) + "," + totalString.substring(3, 6) + "," + totalString.substring(6, 8);
 
         return text;
 
@@ -48,7 +50,7 @@
 
         var total = d3.sum(starterGrants);
 
-        var text = total.substring(0, 2) + "," + total.substring(3, 6) + "," + total.substring(6, 8);
+        var text = total.toString();
 
         return text;
 
